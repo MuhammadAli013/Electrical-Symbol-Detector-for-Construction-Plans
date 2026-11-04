@@ -19,6 +19,9 @@ The box_2d should be [ymin, xmin, ymax, xmax] normalized to 0-1000.
 Floor Plan Image Demo:
 ![FloorPlan](Helping_Images/plan.png)
 
+Gemini Crop Demo (Just from prompt and the cropped legends box ):
+![](Helping_Images/contact_sheet.png)
+
 
 ## Approach
 
@@ -32,12 +35,20 @@ free.
 walls, dashed wiring, fixtures and fills, added in response to the false positives
 the model actually produced.
 
+Train Images Demo:
+![](Helping_Images/train_image/train_00001.png)
+
+**It is important to note that I added a lot of artifacts (Random writing, shapes, lines, etc.) to match the actual construction plan. Without these artifacts, a model was trained also. For obvious reasons, it worked poorly when applied to the original plan, as the data was very different.**
+
 **Tiled inference.** Symbols are tiny relative to the sheet, so the plan is
 processed in overlapping tiles and the detections are merged, with boxes cut by
 inner tile edges discarded.
 
 **Validation against ground truth in the document.** The plan carries its own bill
 of materials, which is parsed and compared against the predicted counts.
+
+Final detected result:
+![](Helping_Images/plan_detected.png)
 
 ## Review interface
 
@@ -48,4 +59,4 @@ user. Corrections are exported as JSON.
 
 ## Stack
 
-YOLOv8, OpenCV, PyMuPDF, FastAPI
+YOLOv8, OpenCV, PyMuPDF, FastAPI, gemini-3.5-flash
