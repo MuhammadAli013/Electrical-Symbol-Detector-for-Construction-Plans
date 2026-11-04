@@ -1,4 +1,4 @@
-# Electrical-Symbol-Detector-for-Construction-Plans
+# Electrical-Symbol-Detector-for-Construction-Plans || YOLOv8
 Detects and counts electrical symbols on architectural floor plans using **YOLOv8**, with a review interface for correcting the results.
 ## What it does
 
