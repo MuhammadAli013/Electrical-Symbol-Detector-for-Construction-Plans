@@ -1,5 +1,5 @@
 # Electrical-Symbol-Detector-for-Construction-Plans
-Detects and counts electrical symbols on architectural floor plans, with a review interface for correcting the results.
+Detects and counts electrical symbols on architectural floor plans using **YOLOv8**, with a review interface for correcting the results.
 ## What it does
 
 Takes a floor plan image, finds every electrical symbol on it, and produces a
