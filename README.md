@@ -57,6 +57,13 @@ as filterable overlays, listed in a schedule grouped by type, and can be
 reclassified, deleted, or added by hand. New symbol types can be defined by the
 user. Corrections are exported as JSON.
 
+Demo Interface
+<img width="1923" height="959" alt="image" src="https://github.com/user-attachments/assets/c9ea1bf4-0ddd-430b-a44d-83297bdd9ccf" />
+
+You can run the demo with this command:
+```
+python app_2.py
+```
 ## Stack
 
 YOLOv8, OpenCV, PyMuPDF, FastAPI, gemini-3.5-flash
