@@ -16,6 +16,9 @@ legend, and a box around the SYMBOL DRAWING ONLY, not the words next to it.
 Skip the legend title. Do not invent rows.
 The box_2d should be [ymin, xmin, ymax, xmax] normalized to 0-1000.
 ```
+Floor Plan Image Demo:
+![FloorPlan](Helping_Images/plan.png)
+
 
 ## Approach
 
